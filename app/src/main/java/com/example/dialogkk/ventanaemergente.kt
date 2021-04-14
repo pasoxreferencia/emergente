@@ -8,7 +8,6 @@ import androidx.fragment.app.DialogFragment
 
 class ventanaemergente: DialogFragment() {
 
-    lateinit var db:
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return activity?.let {

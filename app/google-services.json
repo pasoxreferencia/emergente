@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "969879321941",
+    "project_id": "dialog-5b9b2",
+    "storage_bucket": "dialog-5b9b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969879321941:android:68b2aa06d7973ca5e183dc",
+        "android_client_info": {
+          "package_name": "com.example.dialogkk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969879321941-14rj8e2vmuevia3r48oq6nulihqoo0u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1KyzLt8MtElCDR4M5wWYPa4EXQlTGfL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969879321941-14rj8e2vmuevia3r48oq6nulihqoo0u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
