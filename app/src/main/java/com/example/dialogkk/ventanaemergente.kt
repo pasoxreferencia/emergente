@@ -7,9 +7,10 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.DialogFragment
-import com.example.dialogkk.databinding.ActivityMainBinding
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+
+
 
 // Access a Cloud Firestore instance from your Activity
 val db = Firebase.firestore
@@ -38,7 +39,7 @@ class ventanaemergente: DialogFragment() {
                         )
 
                         // Add a new document with a generated ID
-                        db.collection("users")
+                        db.collection("pacientes")
                             .add(user)
                             .addOnSuccessListener { documentReference ->
                                 Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")

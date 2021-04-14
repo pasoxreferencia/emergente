@@ -4,21 +4,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import com.example.dialogkk.databinding.ActivityMainBinding
 
-private val TAG= "DocSnippets"
+private val TAG= "Mensajes"
+private lateinit var binding: ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val boton = findViewById<Button>(R.id.addButton)
+        val boton = binding.addButton
         boton.setOnClickListener {
             val ventana = ventanaemergente()
             ventana.show(supportFragmentManager, "TAG")
 
 
-        val boton2 = findViewById<Button>(R.id.readbutton)
+        val boton2 = binding.readbutton
         boton2.setOnClickListener {
 
             db.collection("users")
