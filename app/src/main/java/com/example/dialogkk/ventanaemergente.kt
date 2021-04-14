@@ -7,11 +7,12 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.DialogFragment
+import com.example.dialogkk.databinding.DialogBinding
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 
-
+private lateinit var binding: DialogBinding
 // Access a Cloud Firestore instance from your Activity
 val db = Firebase.firestore
 
@@ -33,9 +34,9 @@ class ventanaemergente: DialogFragment() {
                         // sign in the user ...
                         // Create a new user with a first and last name
                         val user = hashMapOf(
-                            "first" to "Ada",
-                            "last" to "Lovelace",
-                            "born" to 1815
+                            "first" to binding.username.text.toString(),//"Ada",
+                            "age" to binding.age.text.toString(),//"Lovelace",
+                                                                        //"born" to 1815
                         )
 
                         // Add a new document with a generated ID

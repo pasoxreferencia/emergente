@@ -3,7 +3,6 @@ package com.example.dialogkk
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import com.example.dialogkk.databinding.ActivityMainBinding
 
 private val TAG= "Mensajes"
